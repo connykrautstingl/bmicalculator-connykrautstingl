@@ -26,9 +26,7 @@ public class BMICalculator {
         this.bodyWeight = bodyWeight;
     }
 
-
     // TODO: Implement getter/setter
-
 
     public String getFirstname() {
         return firstname;
@@ -64,7 +62,9 @@ public class BMICalculator {
 
     public double calculateBMI() {
         // TODO: Your implementation
-        return 0;
+
+        double BMI = bodyHeight / (bodyHeight/100)*(bodyHeight/100);
+        return BMI;
     }
 
     public int calculateBMICategory() {
