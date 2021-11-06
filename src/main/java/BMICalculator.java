@@ -71,21 +71,16 @@ public class BMICalculator {
         if ((calculateBMI() < 16.0 && getGender() == 'm') || (calculateBMI() < 15.0 && getGender() == 'w')) {
             return -2;
         } else if ((calculateBMI() >= 16.0 && calculateBMI() <= 18.4 && getGender() == 'm') ||
-                ((calculateBMI() >= 15.0 && calculateBMI() <= 17.4 && getGender() == 'w')) {
+                ((calculateBMI() >= 15.0 && calculateBMI() <= 17.4 && getGender() == 'w'))) {
             return -1;
-        }
-
-            else if ((calculateBMI() >= 18.5 && calculateBMI() <= 24.9) && getGender() == 'm') ||
-        ((calculateBMI() >= 17.5 && calculateBMI() <= 23.9) && getGender() == 'w') {
+        } else if (((calculateBMI() >= 18.5 && calculateBMI() <= 24.9) && getGender() == 'm') ||
+                ((calculateBMI() >= 17.5 && calculateBMI() <= 23.9) && getGender() == 'w')) {
             return 0;
-        }
-
-              else if ((calculateBMI() >= 25.0 && calculateBMI() <= 34.9) && getGender() == 'm') ||
-        ((calculateBMI() >= 24.0 && calculateBMI() <= 33.9) || getGender() == 'w') {
+        } else if (((calculateBMI() >= 25.0 && calculateBMI() <= 34.9) && getGender() == 'm') ||
+                ((calculateBMI() >= 24.0 && calculateBMI() <= 33.9) || getGender() == 'w')) {
             return 1;
-        }
-                            else if ((calculateBMI() >= 35.0 && getGender() == 'm')) ||
-        ((calculateBMI() >= 34.0 && getGender() == 'w')) {
+        } else if (((calculateBMI() >= 35.0 && getGender() == 'm')) ||
+                ((calculateBMI() >= 34.0 && getGender() == 'w'))) {
             return 2;
         }
     }
