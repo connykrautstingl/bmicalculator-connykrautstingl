@@ -29,6 +29,35 @@ public class BMICalculator {
 
     // TODO: Implement getter/setter
 
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public int getBodyHeight() {
+        return bodyHeight;
+    }
+
+    public double getBodyWeight() {
+        return bodyWeight;
+    }
+
+    public void setBodyHeight(int bodyHeight) {
+        this.bodyHeight = bodyHeight;
+    }
+
+    public void setBodyWeight(double bodyWeight) {
+        this.bodyWeight = bodyWeight;
+    }
+
     private double round(double value) {
         return Math.round(value * 100) / 100D;
     }
