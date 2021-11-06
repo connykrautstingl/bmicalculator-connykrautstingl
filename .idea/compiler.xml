@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="BMICalculatorDemo" />
         <module name="Bmi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Bmi" target="1.5" />
+      <module name="BMICalculatorDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
