@@ -97,10 +97,10 @@ public class BMICalculator {
        else if (calculateBMICategory() == -0){
             return "Normalgewicht";
         }
-        (calculateBMICategory() == 1){
+        else if (calculateBMICategory() == 1){
             return "Übergewicht";
         }
-        (calculateBMICategory() == 2){
+       else if (calculateBMICategory() == 2){
             return "Sehr starkes Übergewicht";
         }
     }
