@@ -87,7 +87,22 @@ public class BMICalculator {
 
     public String getBMICategoryName() {
         // TODO: Your implementation
-        return "";
+
+        if (calculateBMICategory() == -2){
+            return "Sehr starkes Untergewicht";
+        }
+        else if (calculateBMICategory() == -1){
+            return "Untergewicht";
+        }
+       else if (calculateBMICategory() == -0){
+            return "Normalgewicht";
+        }
+        (calculateBMICategory() == 1){
+            return "Übergewicht";
+        }
+        (calculateBMICategory() == 2){
+            return "Sehr starkes Übergewicht";
+        }
     }
 
 }
