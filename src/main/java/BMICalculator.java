@@ -1,9 +1,8 @@
 /*
 
-Name: Your firstname and Lastname
-Email: Your Campus02-Mail-Address
-Matrikel-Number: Your Matrikel-Number
-
+Name: Cornelia Krautstingl
+Email: s44784@edu.campus02.at
+Matrikel-Number: 52010893
 
  */
 
@@ -18,6 +17,15 @@ public class BMICalculator {
     private double bodyWeight;
 
     // TODO: Implement Constructor
+
+    public BMICalculator(String firstname, String lastname, char gender, int bodyHeight, double bodyWeight) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.gender = gender;
+        this.bodyHeight = bodyHeight;
+        this.bodyWeight = bodyWeight;
+    }
+
 
     // TODO: Implement getter/setter
 
