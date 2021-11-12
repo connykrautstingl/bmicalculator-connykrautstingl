@@ -84,6 +84,8 @@ public class BMICalculator {
                 ((calculateBMI() >= 34.0 && getGender() == 'w'))) {
             return 2;
         }
+        return 0;
+
     }
 
     public String getBMICategoryName() {
@@ -104,6 +106,7 @@ public class BMICalculator {
        else if (calculateBMICategory() == 2){
             return "Sehr starkes Übergewicht";
         }
+        return null;
     }
 
 }
