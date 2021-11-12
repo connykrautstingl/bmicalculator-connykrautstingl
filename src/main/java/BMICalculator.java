@@ -63,7 +63,8 @@ public class BMICalculator {
         // TODO: Your implementation
 
         double BMI = bodyHeight / (bodyHeight / 100) * (bodyHeight / 100);
-        return BMI;
+        return round(BMI);
+
     }
 
     public int calculateBMICategory() {
@@ -88,10 +89,10 @@ public class BMICalculator {
     public String getBMICategoryName() {
         // TODO: Your implementation
 
-        if (calculateBMICategory() == -2){
+        if (calculateBMICategory( )== -2){
             return "Sehr starkes Untergewicht";
         }
-        else if (calculateBMICategory() == -1){
+        else if (calculateBMICategory() ==-1){
             return "Untergewicht";
         }
        else if (calculateBMICategory() == -0){
